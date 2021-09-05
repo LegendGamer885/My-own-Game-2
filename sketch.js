@@ -77,7 +77,7 @@ function draw() {
 
     if (meteorGroup.isTouching(invisibleEarth)) {
       life = life - 1;
-      meteorGroup.destroyEach();
+       meteorGroup[0].destroy();
     }
 
     if(alienGroup.isTouching(jet)){
