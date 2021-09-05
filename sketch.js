@@ -56,19 +56,19 @@ function draw() {
   if (gameState === PLAY) {
 
     if (keyDown(UP_ARROW)) {
-      jet.x = jet.x + 7;
+      jet.y = jet.y + 7;
     }
 
     if (keyDown(DOWN_ARROW)) {
-      jet.x = jet.x - 7;
-    }
-
-    if (keyDown(LEFT_ARROW)) {
       jet.y = jet.y - 7;
     }
 
+    if (keyDown(LEFT_ARROW)) {
+      jet.x = jet.x - 7;
+    }
+
     if (keyDown(RIGHT_ARROW)) {
-      jet.y = jet.y + 7;
+      jet.x = jet.x + 7;
     }
 
     if (keyDown("SPACE")) {
